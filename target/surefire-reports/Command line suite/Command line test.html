@@ -1,0 +1,150 @@
+<html>
+<head>
+<title>TestNG:  Command line test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Command line test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>2/1/0</td>
+</tr><tr>
+<td>Started on:</td><td>Fri Nov 04 14:23:56 TRT 2022</td>
+</tr>
+<tr><td>Total time:</td><td>9 seconds (9860 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.epam.maf.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.epam.maf.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Search a product from search bar", "Search Product Smoke Test"</td>
+<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;img class=&quot;s-image&quot; src=&quot;https://m.media-amazon.com/images/I/71jG+e7roXL._AC_UY218_.jpg&quot; srcset=&quot;https://m.media-amazon.com/images/I/71jG+e7roXL._AC_UY218_.jpg 1x, https://m.media-amazon.com/images/I/71jG+e7roXL._AC_UY327_FMwebp_QL65_.jpg 1.5x, https://m.media-amazon.com/images/I/71jG+e7roXL._AC_UY436_FMwebp_QL65_.jpg 2x, https://m.media-amazon.com/images/I/71jG+e7roXL._AC_UY545_FMwebp_QL65_.jpg 2.5x, https://m.media-amazon.com/images/I/71jG+e7roXL._AC_UY654_FMwebp_QL65_.jpg 3x&quot; alt=&quot;2020 Apple MacBook Air Laptop: Apple M1 Chip, 13” Retina Display, 8GB RAM, 256GB SSD Storage, Backlit Keyboard, FaceTime H...&quot; data-image-index=&quot;1&quot; data-image-load=&quot;&quot; data-image-latency=&quot;s-product-image&quot; data-image-source-density=&quot;1&quot;&gt; is not clickable at point (462, 327). Other element would receive the click: &lt;div class=&quot;s-suggestion s-suggestion-ellipsis-direction&quot; role=&quot;button&quot; aria-label=&quot;macbook 2022&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=107.0.5304.87)
+Build info: version: &apos;4.5.0&apos;, revision: &apos;fe167b119a&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;12.6&apos;, java.version: &apos;19&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4611e8924aac2270bceede6dbd6fdb0f, clickElement {id=709aec29-d53a-4318-87d0-21a8b1f9afbf}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.87, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: /var/folders/wc/5xcgtls92ns...}, goog:chromeOptions: {debuggerAddress: localhost:58030}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:58030/devtoo..., se:cdpVersion: 107.0.5304.87, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on MAC (4611e8924aac2270bceede6dbd6fdb0f)] -&gt; css selector: .a-section.aok-relative.s-image-fixed-height &gt; img]
+Session ID: 4611e8924aac2270bceede6dbd6fdb0f
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+	at com.epam.maf.pages.BasePage.click(BasePage.java:48)
+	at com.epam.maf.pages.HomePage.selectProductFromSearchResults(HomePage.java:35)
+	at com.epam.maf.stepdefs.HomePageStepdefs.whenISelectAProductFromSearchResult(HomePageStepdefs.java:54)
+	at ✽.I select a product from search result(file:///Users/Gorkem_Ceyhan/Documents/ideaProjects/epam-web-selenium/src/test/resources/smoke/homepage.feature:15)
+... Removed 3 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1681259036", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1681259036'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;img class=&quot;s-image&quot; src=&quot;https://m.media-amazon.com/images/I/71jG+e7roXL._AC_UY218_.jpg&quot; srcset=&quot;https://m.media-amazon.com/images/I/71jG+e7roXL._AC_UY218_.jpg 1x, https://m.media-amazon.com/images/I/71jG+e7roXL._AC_UY327_FMwebp_QL65_.jpg 1.5x, https://m.media-amazon.com/images/I/71jG+e7roXL._AC_UY436_FMwebp_QL65_.jpg 2x, https://m.media-amazon.com/images/I/71jG+e7roXL._AC_UY545_FMwebp_QL65_.jpg 2.5x, https://m.media-amazon.com/images/I/71jG+e7roXL._AC_UY654_FMwebp_QL65_.jpg 3x&quot; alt=&quot;2020 Apple MacBook Air Laptop: Apple M1 Chip, 13” Retina Display, 8GB RAM, 256GB SSD Storage, Backlit Keyboard, FaceTime H...&quot; data-image-index=&quot;1&quot; data-image-load=&quot;&quot; data-image-latency=&quot;s-product-image&quot; data-image-source-density=&quot;1&quot;&gt; is not clickable at point (462, 327). Other element would receive the click: &lt;div class=&quot;s-suggestion s-suggestion-ellipsis-direction&quot; role=&quot;button&quot; aria-label=&quot;macbook 2022&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=107.0.5304.87)
+Build info: version: &apos;4.5.0&apos;, revision: &apos;fe167b119a&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;12.6&apos;, java.version: &apos;19&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4611e8924aac2270bceede6dbd6fdb0f, clickElement {id=709aec29-d53a-4318-87d0-21a8b1f9afbf}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.87, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: /var/folders/wc/5xcgtls92ns...}, goog:chromeOptions: {debuggerAddress: localhost:58030}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:58030/devtoo..., se:cdpVersion: 107.0.5304.87, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on MAC (4611e8924aac2270bceede6dbd6fdb0f)] -&gt; css selector: .a-section.aok-relative.s-image-fixed-height &gt; img]
+Session ID: 4611e8924aac2270bceede6dbd6fdb0f
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+	at com.epam.maf.pages.BasePage.click(BasePage.java:48)
+	at com.epam.maf.pages.HomePage.selectProductFromSearchResults(HomePage.java:35)
+	at com.epam.maf.stepdefs.HomePageStepdefs.whenISelectAProductFromSearchResult(HomePageStepdefs.java:54)
+	at ✽.I select a product from search result(file:///Users/Gorkem_Ceyhan/Documents/ideaProjects/epam-web-selenium/src/test/resources/smoke/homepage.feature:15)
+</pre></div></td>
+<td>2</td>
+<td>com.epam.maf.runner.TestRunner@51b7e5df</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.epam.maf.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.epam.maf.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Heading to website", "Search Product Smoke Test"</td>
+<td></td>
+<td>0</td>
+<td>com.epam.maf.runner.TestRunner@51b7e5df</td></tr>
+<tr>
+<td title='com.epam.maf.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.epam.maf.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Search a product from search bar", "Search Product Smoke Test"</td>
+<td></td>
+<td>0</td>
+<td>com.epam.maf.runner.TestRunner@51b7e5df</td></tr>
+</table><p>
+</body>
+</html>

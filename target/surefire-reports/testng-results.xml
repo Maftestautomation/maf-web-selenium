@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-11-04T14:23:56 TRT" name="Command line suite" finished-at="2022-11-04T14:24:06 TRT" duration-ms="9860">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.epam.maf.runner.TestRunner@51b7e5df]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2022-11-04T14:23:56 TRT" name="Command line test" finished-at="2022-11-04T14:24:06 TRT" duration-ms="9860">
+      <class name="com.epam.maf.runner.TestRunner">
+        <test-method is-config="true" signature="Setup()[pri:0, instance:com.epam.maf.runner.TestRunner@51b7e5df]" started-at="2022-11-04T14:23:56 TRT" name="Setup" finished-at="2022-11-04T14:24:01 TRT" duration-ms="5136" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Setup -->
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.epam.maf.runner.TestRunner@51b7e5df]" started-at="2022-11-04T14:24:01 TRT" name="setUpClass" finished-at="2022-11-04T14:24:02 TRT" duration-ms="218" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@7f97bc14]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.epam.maf.runner.TestRunner@51b7e5df]" started-at="2022-11-04T14:24:02 TRT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-11-04T14:24:02 TRT" duration-ms="89" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Heading to website"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Search Product Smoke Test"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.epam.maf.runner.TestRunner@51b7e5df]" started-at="2022-11-04T14:24:02 TRT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-11-04T14:24:04 TRT" duration-ms="2614" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Search a product from search bar"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Search Product Smoke Test"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element <img class="s-image" src="https://m.media-amazon.com/images/I/71jG+e7roXL._AC_UY218_.jpg" srcset="https://m.media-amazon.com/images/I/71jG+e7roXL._AC_UY218_.jpg 1x, https://m.media-amazon.com/images/I/71jG+e7roXL._AC_UY327_FMwebp_QL65_.jpg 1.5x, https://m.media-amazon.com/images/I/71jG+e7roXL._AC_UY436_FMwebp_QL65_.jpg 2x, https://m.media-amazon.com/images/I/71jG+e7roXL._AC_UY545_FMwebp_QL65_.jpg 2.5x, https://m.media-amazon.com/images/I/71jG+e7roXL._AC_UY654_FMwebp_QL65_.jpg 3x" alt="2020 Apple MacBook Air Laptop: Apple M1 Chip, 13” Retina Display, 8GB RAM, 256GB SSD Storage, Backlit Keyboard, FaceTime H..." data-image-index="1" data-image-load="" data-image-latency="s-product-image" data-image-source-density="1"> is not clickable at point (462, 327). Other element would receive the click: <div class="s-suggestion s-suggestion-ellipsis-direction" role="button" aria-label="macbook 2022">...</div>
+  (Session info: chrome=107.0.5304.87)
+Build info: version: '4.5.0', revision: 'fe167b119a'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '12.6', java.version: '19'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4611e8924aac2270bceede6dbd6fdb0f, clickElement {id=709aec29-d53a-4318-87d0-21a8b1f9afbf}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.87, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: /var/folders/wc/5xcgtls92ns...}, goog:chromeOptions: {debuggerAddress: localhost:58030}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:58030/devtoo..., se:cdpVersion: 107.0.5304.87, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on MAC (4611e8924aac2270bceede6dbd6fdb0f)] -> css selector: .a-section.aok-relative.s-image-fixed-height > img]
+Session ID: 4611e8924aac2270bceede6dbd6fdb0f]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <img class="s-image" src="https://m.media-amazon.com/images/I/71jG+e7roXL._AC_UY218_.jpg" srcset="https://m.media-amazon.com/images/I/71jG+e7roXL._AC_UY218_.jpg 1x, https://m.media-amazon.com/images/I/71jG+e7roXL._AC_UY327_FMwebp_QL65_.jpg 1.5x, https://m.media-amazon.com/images/I/71jG+e7roXL._AC_UY436_FMwebp_QL65_.jpg 2x, https://m.media-amazon.com/images/I/71jG+e7roXL._AC_UY545_FMwebp_QL65_.jpg 2.5x, https://m.media-amazon.com/images/I/71jG+e7roXL._AC_UY654_FMwebp_QL65_.jpg 3x" alt="2020 Apple MacBook Air Laptop: Apple M1 Chip, 13” Retina Display, 8GB RAM, 256GB SSD Storage, Backlit Keyboard, FaceTime H..." data-image-index="1" data-image-load="" data-image-latency="s-product-image" data-image-source-density="1"> is not clickable at point (462, 327). Other element would receive the click: <div class="s-suggestion s-suggestion-ellipsis-direction" role="button" aria-label="macbook 2022">...</div>
+  (Session info: chrome=107.0.5304.87)
+Build info: version: '4.5.0', revision: 'fe167b119a'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '12.6', java.version: '19'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4611e8924aac2270bceede6dbd6fdb0f, clickElement {id=709aec29-d53a-4318-87d0-21a8b1f9afbf}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.87, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: /var/folders/wc/5xcgtls92ns...}, goog:chromeOptions: {debuggerAddress: localhost:58030}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:58030/devtoo..., se:cdpVersion: 107.0.5304.87, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on MAC (4611e8924aac2270bceede6dbd6fdb0f)] -> css selector: .a-section.aok-relative.s-image-fixed-height > img]
+Session ID: 4611e8924aac2270bceede6dbd6fdb0f
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+at com.epam.maf.pages.BasePage.click(BasePage.java:48)
+at com.epam.maf.pages.HomePage.selectProductFromSearchResults(HomePage.java:35)
+at com.epam.maf.stepdefs.HomePageStepdefs.whenISelectAProductFromSearchResult(HomePageStepdefs.java:54)
+at ✽.I select a product from search result(file:///Users/Gorkem_Ceyhan/Documents/ideaProjects/epam-web-selenium/src/test/resources/smoke/homepage.feature:15)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="takeScreenshot(org.testng.ITestResult)[pri:0, instance:com.epam.maf.runner.TestRunner@51b7e5df]" started-at="2022-11-04T14:24:02 TRT" name="takeScreenshot" finished-at="2022-11-04T14:24:02 TRT" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=runScenario status=SUCCESS method=AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.epam.maf.runner.TestRunner@51b7e5df] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenshot -->
+        <test-method is-config="true" signature="takeScreenshot(org.testng.ITestResult)[pri:0, instance:com.epam.maf.runner.TestRunner@51b7e5df]" started-at="2022-11-04T14:24:04 TRT" name="takeScreenshot" finished-at="2022-11-04T14:24:05 TRT" duration-ms="257" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=runScenario status=FAILURE method=AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.epam.maf.runner.TestRunner@51b7e5df] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenshot -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.epam.maf.runner.TestRunner@51b7e5df]" started-at="2022-11-04T14:24:05 TRT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-11-04T14:24:05 TRT" duration-ms="3" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Search a product from search bar"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Search Product Smoke Test"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="takeScreenshot(org.testng.ITestResult)[pri:0, instance:com.epam.maf.runner.TestRunner@51b7e5df]" started-at="2022-11-04T14:24:05 TRT" name="takeScreenshot" finished-at="2022-11-04T14:24:05 TRT" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=runScenario status=SUCCESS method=AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.epam.maf.runner.TestRunner@51b7e5df] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenshot -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.epam.maf.runner.TestRunner@51b7e5df]" started-at="2022-11-04T14:24:05 TRT" name="tearDownClass" finished-at="2022-11-04T14:24:06 TRT" duration-ms="1406" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.epam.maf.runner.TestRunner@51b7e5df]" started-at="2022-11-04T14:24:06 TRT" name="tearDown" finished-at="2022-11-04T14:24:06 TRT" duration-ms="119" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.epam.maf.runner.TestRunner -->
+    </test> <!-- Command line test -->
+  </suite> <!-- Command line suite -->
+</testng-results>

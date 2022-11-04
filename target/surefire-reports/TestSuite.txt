@@ -1,0 +1,31 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 10.142 sec <<< FAILURE!
+runScenario(com.epam.maf.runner.TestRunner)  Time elapsed: 2.62 sec  <<< FAILURE!
+org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <img class="s-image" src="https://m.media-amazon.com/images/I/71jG+e7roXL._AC_UY218_.jpg" srcset="https://m.media-amazon.com/images/I/71jG+e7roXL._AC_UY218_.jpg 1x, https://m.media-amazon.com/images/I/71jG+e7roXL._AC_UY327_FMwebp_QL65_.jpg 1.5x, https://m.media-amazon.com/images/I/71jG+e7roXL._AC_UY436_FMwebp_QL65_.jpg 2x, https://m.media-amazon.com/images/I/71jG+e7roXL._AC_UY545_FMwebp_QL65_.jpg 2.5x, https://m.media-amazon.com/images/I/71jG+e7roXL._AC_UY654_FMwebp_QL65_.jpg 3x" alt="2020 Apple MacBook Air Laptop: Apple M1 Chip, 13” Retina Display, 8GB RAM, 256GB SSD Storage, Backlit Keyboard, FaceTime H..." data-image-index="1" data-image-load="" data-image-latency="s-product-image" data-image-source-density="1"> is not clickable at point (462, 327). Other element would receive the click: <div class="s-suggestion s-suggestion-ellipsis-direction" role="button" aria-label="macbook 2022">...</div>
+  (Session info: chrome=107.0.5304.87)
+Build info: version: '4.5.0', revision: 'fe167b119a'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '12.6', java.version: '19'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4611e8924aac2270bceede6dbd6fdb0f, clickElement {id=709aec29-d53a-4318-87d0-21a8b1f9afbf}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.87, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: /var/folders/wc/5xcgtls92ns...}, goog:chromeOptions: {debuggerAddress: localhost:58030}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:58030/devtoo..., se:cdpVersion: 107.0.5304.87, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on MAC (4611e8924aac2270bceede6dbd6fdb0f)] -> css selector: .a-section.aok-relative.s-image-fixed-height > img]
+Session ID: 4611e8924aac2270bceede6dbd6fdb0f
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+	at com.epam.maf.pages.BasePage.click(BasePage.java:48)
+	at com.epam.maf.pages.HomePage.selectProductFromSearchResults(HomePage.java:35)
+	at com.epam.maf.stepdefs.HomePageStepdefs.whenISelectAProductFromSearchResult(HomePageStepdefs.java:54)
+	at ✽.I select a product from search result(file:///Users/Gorkem_Ceyhan/Documents/ideaProjects/epam-web-selenium/src/test/resources/smoke/homepage.feature:15)
+
