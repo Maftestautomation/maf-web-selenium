@@ -6,11 +6,10 @@
       <class name="com.epam.maf.runner.TestRunner">
         <methods>
           <include name="setUpClass"/>
-          <include name="Setup"/>
           <include name="tearDown"/>
+          <include name="Setup"/>
           <include name="tearDownClass"/>
-          <include name="runScenario" invocation-numbers="1"/>
-          <include name="takeScreenshot"/>
+          <include name="runScenario" invocation-numbers="0"/>
         </methods>
       </class> <!-- com.epam.maf.runner.TestRunner -->
     </classes>

@@ -6,7 +6,7 @@
         <listener class-name="com.epam.maf.listener.TestListener"/>
     </listeners>
 
-    <test name="Selenium UI Tests" parallel="methods" thread-count="2">
+    <test name="Selenium UI Tests" parallel="methods">
         <classes>
             <class name="com.epam.maf.runner.TestRunner"/>
         </classes>

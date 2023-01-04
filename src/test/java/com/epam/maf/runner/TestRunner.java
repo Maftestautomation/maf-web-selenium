@@ -1,11 +1,13 @@
 package com.epam.maf.runner;
 
 import com.epam.maf.utilities.Config;
+import io.cucumber.java.AfterAll;
 import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
 
 import static com.epam.maf.utilities.DriverFactory.getDriver;
@@ -22,12 +24,12 @@ import static com.epam.maf.utilities.DriverFactory.quitDriver;
 )
 public class TestRunner extends AbstractTestNGCucumberTests {
 
-    @BeforeTest
+    @BeforeMethod
     public void Setup() {
         getDriver();
     }
 
-    @AfterMethod
+    @AfterAll
     public void takeScreenshot(ITestResult result) {
 
         if (ITestResult.FAILURE == result.getStatus()) {
@@ -35,7 +37,7 @@ public class TestRunner extends AbstractTestNGCucumberTests {
         }
     }
 
-    @AfterTest
+    @AfterMethod
     public void tearDown() {
         quitDriver();
     }

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="3" failures="1" name="TestSuite" time="2.712" errors="0" skipped="0">
+<testsuite tests="1" failures="0" name="TestSuite" time="2.678" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="java.vm.version" value="19"/>
@@ -32,18 +32,18 @@
     <property name="java.class.version" value="63.0"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
-    <property name="os.version" value="12.6"/>
+    <property name="os.version" value="13.0.1"/>
     <property name="library.jansi.path" value="/opt/homebrew/Cellar/maven@3.5/3.5.4_1/libexec/lib/jansi-native"/>
     <property name="user.home" value="/Users/Gorkem_Ceyhan"/>
     <property name="user.timezone" value="Europe/Istanbul"/>
     <property name="file.encoding" value="UTF-8"/>
     <property name="java.specification.version" value="19"/>
-    <property name="cucumber.filter.tags" value="@smoke"/>
+    <property name="cucumber.filter.tags" value="@MAF_01"/>
     <property name="user.name" value="Gorkem_Ceyhan"/>
     <property name="java.class.path" value="/opt/homebrew/Cellar/maven@3.5/3.5.4_1/libexec/boot/plexus-classworlds-2.5.2.jar"/>
     <property name="java.vm.specification.version" value="19"/>
     <property name="sun.arch.data.model" value="64"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher test -Dcucumber.filter.tags=@smoke"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher test -Dcucumber.filter.tags=@MAF_01"/>
     <property name="java.home" value="/opt/homebrew/Cellar/openjdk/19/libexec/openjdk.jdk/Contents/Home"/>
     <property name="apple.awt.application.name" value="Launcher"/>
     <property name="user.language" value="en"/>
@@ -60,81 +60,5 @@
     <property name="sun.cpu.endian" value="little"/>
     <property name="java.vendor.version" value="Homebrew"/>
   </properties>
-  <testcase classname="com.epam.maf.runner.TestRunner" name="runScenario" time="0.09"/>
-  <testcase classname="com.epam.maf.runner.TestRunner" name="runScenario" time="2.62">
-    <failure message="element click intercepted: Element &lt;img class=&quot;s-image&quot; src=&quot;https://m.media-amazon.com/images/I/71jG+e7roXL._AC_UY218_.jpg&quot; srcset=&quot;https://m.media-amazon.com/images/I/71jG+e7roXL._AC_UY218_.jpg 1x, https://m.media-amazon.com/images/I/71jG+e7roXL._AC_UY327_FMwebp_QL65_.jpg 1.5x, https://m.media-amazon.com/images/I/71jG+e7roXL._AC_UY436_FMwebp_QL65_.jpg 2x, https://m.media-amazon.com/images/I/71jG+e7roXL._AC_UY545_FMwebp_QL65_.jpg 2.5x, https://m.media-amazon.com/images/I/71jG+e7roXL._AC_UY654_FMwebp_QL65_.jpg 3x&quot; alt=&quot;2020 Apple MacBook Air Laptop: Apple M1 Chip, 13” Retina Display, 8GB RAM, 256GB SSD Storage, Backlit Keyboard, FaceTime H...&quot; data-image-index=&quot;1&quot; data-image-load=&quot;&quot; data-image-latency=&quot;s-product-image&quot; data-image-source-density=&quot;1&quot;&gt; is not clickable at point (462, 327). Other element would receive the click: &lt;div class=&quot;s-suggestion s-suggestion-ellipsis-direction&quot; role=&quot;button&quot; aria-label=&quot;macbook 2022&quot;&gt;...&lt;/div&gt;
-  (Session info: chrome=107.0.5304.87)
-Build info: version: &apos;4.5.0&apos;, revision: &apos;fe167b119a&apos;
-System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;12.6&apos;, java.version: &apos;19&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [4611e8924aac2270bceede6dbd6fdb0f, clickElement {id=709aec29-d53a-4318-87d0-21a8b1f9afbf}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.87, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: /var/folders/wc/5xcgtls92ns...}, goog:chromeOptions: {debuggerAddress: localhost:58030}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:58030/devtoo..., se:cdpVersion: 107.0.5304.87, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on MAC (4611e8924aac2270bceede6dbd6fdb0f)] -&gt; css selector: .a-section.aok-relative.s-image-fixed-height &gt; img]
-Session ID: 4611e8924aac2270bceede6dbd6fdb0f" type="org.openqa.selenium.ElementClickInterceptedException">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;img class=&quot;s-image&quot; src=&quot;https://m.media-amazon.com/images/I/71jG+e7roXL._AC_UY218_.jpg&quot; srcset=&quot;https://m.media-amazon.com/images/I/71jG+e7roXL._AC_UY218_.jpg 1x, https://m.media-amazon.com/images/I/71jG+e7roXL._AC_UY327_FMwebp_QL65_.jpg 1.5x, https://m.media-amazon.com/images/I/71jG+e7roXL._AC_UY436_FMwebp_QL65_.jpg 2x, https://m.media-amazon.com/images/I/71jG+e7roXL._AC_UY545_FMwebp_QL65_.jpg 2.5x, https://m.media-amazon.com/images/I/71jG+e7roXL._AC_UY654_FMwebp_QL65_.jpg 3x&quot; alt=&quot;2020 Apple MacBook Air Laptop: Apple M1 Chip, 13” Retina Display, 8GB RAM, 256GB SSD Storage, Backlit Keyboard, FaceTime H...&quot; data-image-index=&quot;1&quot; data-image-load=&quot;&quot; data-image-latency=&quot;s-product-image&quot; data-image-source-density=&quot;1&quot;&gt; is not clickable at point (462, 327). Other element would receive the click: &lt;div class=&quot;s-suggestion s-suggestion-ellipsis-direction&quot; role=&quot;button&quot; aria-label=&quot;macbook 2022&quot;&gt;...&lt;/div&gt;
-  (Session info: chrome=107.0.5304.87)
-Build info: version: &apos;4.5.0&apos;, revision: &apos;fe167b119a&apos;
-System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;12.6&apos;, java.version: &apos;19&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [4611e8924aac2270bceede6dbd6fdb0f, clickElement {id=709aec29-d53a-4318-87d0-21a8b1f9afbf}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.87, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: /var/folders/wc/5xcgtls92ns...}, goog:chromeOptions: {debuggerAddress: localhost:58030}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:58030/devtoo..., se:cdpVersion: 107.0.5304.87, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on MAC (4611e8924aac2270bceede6dbd6fdb0f)] -&gt; css selector: .a-section.aok-relative.s-image-fixed-height &gt; img]
-Session ID: 4611e8924aac2270bceede6dbd6fdb0f
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
-	at com.epam.maf.pages.BasePage.click(BasePage.java:48)
-	at com.epam.maf.pages.HomePage.selectProductFromSearchResults(HomePage.java:35)
-	at com.epam.maf.stepdefs.HomePageStepdefs.whenISelectAProductFromSearchResult(HomePageStepdefs.java:54)
-	at ✽.I select a product from search result(file:///Users/Gorkem_Ceyhan/Documents/ideaProjects/epam-web-selenium/src/test/resources/smoke/homepage.feature:15)
-</failure>
-    <system-out>
-@browser @smoke
-Scenario: Search a product from search bar                        # src/test/resources/smoke/homepage.feature:12
-test@test.com test
-  Given I login with username &apos;test@test.com&apos; and password &apos;test&apos; # com.epam.maf.stepdefs.HomePageStepdefs.givenILoginWithUsernameTestTestComAndPasswordTest(java.lang.String,java.lang.String)
-  Given I navigate to Amazon Home Page                            # com.epam.maf.stepdefs.HomePageStepdefs.givenINavigateToAmazonHomePage()
-  When I search &apos;macbook&apos; product from search bar                 # com.epam.maf.stepdefs.HomePageStepdefs.whenSearchProductFromSearchBar(java.lang.String)
-  And I select a product from search result                       # com.epam.maf.stepdefs.HomePageStepdefs.whenISelectAProductFromSearchResult()
-      org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;img class=&quot;s-image&quot; src=&quot;https://m.media-amazon.com/images/I/71jG+e7roXL._AC_UY218_.jpg&quot; srcset=&quot;https://m.media-amazon.com/images/I/71jG+e7roXL._AC_UY218_.jpg 1x, https://m.media-amazon.com/images/I/71jG+e7roXL._AC_UY327_FMwebp_QL65_.jpg 1.5x, https://m.media-amazon.com/images/I/71jG+e7roXL._AC_UY436_FMwebp_QL65_.jpg 2x, https://m.media-amazon.com/images/I/71jG+e7roXL._AC_UY545_FMwebp_QL65_.jpg 2.5x, https://m.media-amazon.com/images/I/71jG+e7roXL._AC_UY654_FMwebp_QL65_.jpg 3x&quot; alt=&quot;2020 Apple MacBook Air Laptop: Apple M1 Chip, 13” Retina Display, 8GB RAM, 256GB SSD Storage, Backlit Keyboard, FaceTime H...&quot; data-image-index=&quot;1&quot; data-image-load=&quot;&quot; data-image-latency=&quot;s-product-image&quot; data-image-source-density=&quot;1&quot;&gt; is not clickable at point (462, 327). Other element would receive the click: &lt;div class=&quot;s-suggestion s-suggestion-ellipsis-direction&quot; role=&quot;button&quot; aria-label=&quot;macbook 2022&quot;&gt;...&lt;/div&gt;
-  (Session info: chrome=107.0.5304.87)
-Build info: version: &apos;4.5.0&apos;, revision: &apos;fe167b119a&apos;
-System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;12.6&apos;, java.version: &apos;19&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [4611e8924aac2270bceede6dbd6fdb0f, clickElement {id=709aec29-d53a-4318-87d0-21a8b1f9afbf}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.87, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: /var/folders/wc/5xcgtls92ns...}, goog:chromeOptions: {debuggerAddress: localhost:58030}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:58030/devtoo..., se:cdpVersion: 107.0.5304.87, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on MAC (4611e8924aac2270bceede6dbd6fdb0f)] -&gt; css selector: .a-section.aok-relative.s-image-fixed-height &gt; img]
-Session ID: 4611e8924aac2270bceede6dbd6fdb0f
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
-	at com.epam.maf.pages.BasePage.click(BasePage.java:48)
-	at com.epam.maf.pages.HomePage.selectProductFromSearchResults(HomePage.java:35)
-	at com.epam.maf.stepdefs.HomePageStepdefs.whenISelectAProductFromSearchResult(HomePageStepdefs.java:54)
-	at ✽.I select a product from search result(file:///Users/Gorkem_Ceyhan/Documents/ideaProjects/epam-web-selenium/src/test/resources/smoke/homepage.feature:15)
-
-</system-out>
-    <system-err>[main] INFO com.epam.maf.pages.BasePage - ================ ElementBy.id: nav-logo-sprites is succesfuly displayed ================
-[main] INFO com.epam.maf.pages.BasePage - ================ Entering: macbook to element: By.id: twotabsearchtextbox ================
-[main] INFO com.epam.maf.pages.BasePage - ================ Text is displayed as: By.cssSelector: .a-color-state.a-text-bold ================
-</system-err>
-  </testcase>
-  <testcase classname="com.epam.maf.runner.TestRunner" name="runScenario" time="0.002"/>
+  <testcase classname="com.epam.maf.runner.TestRunner" name="runScenario" time="2.678"/>
 </testsuite>

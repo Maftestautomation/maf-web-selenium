@@ -1,6 +1,7 @@
 package com.epam.maf.utilities;
 
 import com.epam.maf.listener.TestListener;
+import io.cucumber.java.After;
 import io.cucumber.java.AfterAll;
 import io.cucumber.java.Before;
 import lombok.extern.slf4j.Slf4j;
@@ -27,7 +28,7 @@ public class Hooks {
         }
     }
 
-    @AfterAll
+    @After
     public void tearDown() {
         quitDriver();
     }

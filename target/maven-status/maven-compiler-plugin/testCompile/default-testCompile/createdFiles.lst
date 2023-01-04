@@ -2,7 +2,9 @@ com/epam/maf/listener/TestListener.class
 com/epam/maf/utilities/DriverFactory.class
 com/epam/maf/pages/HomePage.class
 com/epam/maf/runner/TestRunner.class
+com/epam/maf/stepdefs/ProductDetailStepdefs.class
 com/epam/maf/pages/BasePage.class
 com/epam/maf/utilities/Hooks.class
+com/epam/maf/pages/ProductDetailPage.class
 com/epam/maf/utilities/Config.class
 com/epam/maf/stepdefs/HomePageStepdefs.class

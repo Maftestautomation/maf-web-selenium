@@ -1,32 +1,35 @@
-@browser
-Feature: Search Product Smoke Test
+
+Feature: Crateandbarrel System Smoke Test
 
   Background:
-    Given I login with username 'test@test.com' and password 'test'
+    Given I navigate to crateandbarrel homepage
 
-  @smoke
-  Scenario: Heading to website
-    Given I navigate to Amazon Home Page
+    @smoke @MAF_01
+  Scenario: Verify HomePage
+    Then I check 'components' on HomePage
+    And I check 'categories menu' on HomePage
+    And I check 'footer' on HomePage
 
-  @smoke
-  Scenario: Search a product from search bar
-    Given I navigate to Amazon Home Page
-    When I search 'macbook' product from search bar
-    And I select a product from search result
+    @smoke @MAF_02
+  Scenario: Verify Product Detail Page
+    Given I navigate to product detail page
+    Then I check product on product detail page
+    And I check breadcrumb on product detail page
 
+    @smoke @MAF_03
+  Scenario: Verify Product Details section
+    Given I navigate to product detail page
+    When I expand product details section
+    Then I should see details information on product detail page
+    And I should see algonomy component on product detail page
 
-  @wip
-  Scenario Outline: Check products are displayed on result page
-    Given I navigate to Amazon Home Page
-    When I search '<product>' product from search bar
-    Then I check the '<result>'
+    @smoke @MAF_04
+  Scenario: Verify SKU component
+    Given I navigate to product detail page
+    When I expand product details section
+    Then I should see product SKU on product detail page
 
-    Examples:
-      |product               |result
-      |macbook               |true
-      |iphone                |true
-      |s3234%dg+$sdgxdvxd    |false
-
-  @smoke
-  Scenario: Search a product from search bar
-    Given I search blabla
+    @smoke @MAF_05
+  Scenario: Verify contact us section
+    Given I navigate to product detail page
+    Then I should see contact us component on product detail page
